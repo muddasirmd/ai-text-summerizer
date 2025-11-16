@@ -20,6 +20,9 @@ services:
       - backend
     networks:
       - ai-net
+    volumes:
+    - ./frontend/vue-app:/app
+    - /app/node_modules
 
 networks:
   ai-net:
